@@ -83,6 +83,56 @@
       border-color: var(--accent);
       background: #1f1f1f;
     }
+
+    .projects {
+      margin-top: 2.5rem;
+      text-align: left;
+    }
+
+    .projects h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      border: 1px solid #2a2a2a;
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-bottom: 0.75rem;
+      transition: border-color 0.2s;
+    }
+
+    .project-card:hover {
+      border-color: var(--accent);
+    }
+
+    .project-card h3 {
+      font-size: 1rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .project-card p {
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0.6rem;
+    }
+
+    .project-card a {
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
+    .project-card a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
@@ -93,6 +143,28 @@
     <div class="links">
       <a href="https://github.com/LEHesse" target="_blank">GitHub</a>
       <a href="https://linkedin.com/in/" target="_blank">LinkedIn</a>
+    </div>
+
+    <div class="projects">
+      <h2>Projects</h2>
+
+      <div class="project-card">
+        <h3>Weather Dashboard</h3>
+        <p>A live weather app pulling data from Open-Meteo API with location search and 5-day forecasts.</p>
+        <a href="#">View project &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Task Tracker</h3>
+        <p>A minimal to-do app with local storage, drag-and-drop reordering, and dark mode support.</p>
+        <a href="#">View project &rarr;</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Portfolio v2</h3>
+        <p>A redesigned portfolio with project filtering, smooth animations, and responsive layout.</p>
+        <a href="#">View project &rarr;</a>
+      </div>
     </div>
   </div>
 </body>
